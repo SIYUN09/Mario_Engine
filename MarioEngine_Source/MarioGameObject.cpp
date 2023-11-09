@@ -14,22 +14,22 @@ namespace Mario
 	{
 		if (GetAsyncKeyState(VK_LEFT) & 0x8000)
 		{
-			mX -= 0.01f;
+			mX -= 1;
 		}
 
 		if (GetAsyncKeyState(VK_RIGHT) & 0x8000)
 		{
-			mX += 0.01f;
+			mX += 1;
 		}
 
 		if (GetAsyncKeyState(VK_UP) & 0x8000)
 		{
-			mY -= 0.01f;
+			mY -= 1;
 		}
 
 		if (GetAsyncKeyState(VK_DOWN) & 0x8000)
 		{
-			mY += 0.01f;
+			mY += 1;
 		}
 	}
 

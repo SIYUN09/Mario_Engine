@@ -1,6 +1,8 @@
 #pragma once
 #include "CommonInclude.h"
 #include "MarioGameObject.h"
+#include "GameObjectMonster.h"
+
 namespace Mario
 {
 	class Application
@@ -21,6 +23,8 @@ namespace Mario
 		HDC mHdc;
 
 		GameObject mPlayer;
+		GameObjectMonster mMonster;
+		
 	};
 }
 

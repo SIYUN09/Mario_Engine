@@ -18,7 +18,6 @@ namespace Mario
 	{
 		mHwnd = hwnd;
 		mHdc = GetDC(hwnd);
-		mPlayer.SetPosition(0, 0);
 	}
 	void Application::Run()
 	{
@@ -29,6 +28,7 @@ namespace Mario
 	void Application::Update()
 	{
 		mPlayer.Update();
+		mMonster.Update();
 	}
 	void Application::LateUpdate()
 	{
@@ -37,5 +37,6 @@ namespace Mario
 	void Application::Render()
 	{
 		mPlayer.Render(mHdc);
+		mMonster.Render(mHdc);
 	}
 }

@@ -15,10 +15,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObjectMonster.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioGameObject.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObjectMonster.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioApplication.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioGameObject.cpp" />
   </ItemGroup>
