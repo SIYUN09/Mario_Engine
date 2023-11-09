@@ -1,5 +1,5 @@
 #include "MarioApplication.h"
-
+#include "MarioInput.h"
 namespace Mario
 {
 	Application::Application()
@@ -18,6 +18,7 @@ namespace Mario
 	{
 		mHwnd = hwnd;
 		mHdc = GetDC(hwnd);
+		Input::Initailize();
 	}
 	void Application::Run()
 	{
@@ -27,6 +28,7 @@ namespace Mario
 	}
 	void Application::Update()
 	{
+		Input::Update();
 		mPlayer.Update();
 		mMonster.Update();
 	}
