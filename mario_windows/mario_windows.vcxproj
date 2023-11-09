@@ -154,6 +154,11 @@
     <Image Include="mario_windows.ico" />
     <Image Include="small.ico" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MarioEngine_Window\MarioEngine_Window.vcxproj">
+      <Project>{0cfa8b08-cabf-4cd3-a942-db5d58d89d2f}</Project>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
