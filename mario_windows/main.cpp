@@ -4,6 +4,7 @@
 #include "framework.h"
 #include "mario_windows.h"
 
+#include "..\\MarioEngine_Source\\MarioApplication.h"
 #define MAX_LOADSTRING 100
 
 // 전역 변수:
