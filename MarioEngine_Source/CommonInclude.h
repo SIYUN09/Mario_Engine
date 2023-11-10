@@ -2,4 +2,5 @@
 #include <windows.h>
 
 #include <vector>
+#include <algorithm>
 //#include <list>
