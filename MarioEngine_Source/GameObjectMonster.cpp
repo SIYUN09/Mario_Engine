@@ -28,10 +28,6 @@ namespace Mario
 		mY += mSpeed;
 	}
 
-	void GameObjectMonster::LateUpdate()
-	{
-
-	}
 
 	void GameObjectMonster::Render(HDC hdc)
 	{

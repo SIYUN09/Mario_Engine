@@ -1,5 +1,7 @@
 #include "MarioGameObject.h"
 #include "MarioInput.h"
+#include "MarioTime.h"
+
 namespace Mario
 {
 	GameObject::GameObject()
@@ -12,25 +14,27 @@ namespace Mario
 
 	void GameObject::Update()
 	{
+		const int speed = 100.0f;
 		if (Input::GetKey(eKeyCode::A))
 		{
-			mX -= 1;
+			mX -= speed * Time::DeltaTime();
 		}
 
 		if (Input::GetKey(eKeyCode::D))
 		{
-			mX += 1;
+			mX += speed * Time::DeltaTime();
 		}
 
 		if (Input::GetKey(eKeyCode::W))
 		{
-			mY -= 1;
+			mY -= speed * Time::DeltaTime();
 		}
 
 		if (Input::GetKey(eKeyCode::S))
 		{
-			mY += 1;
+			mY += speed * Time::DeltaTime();
 		}
+		
 	}
 
 	void GameObject::LateUpdate()

@@ -1,7 +1,7 @@
 #include "MarioInput.h"
 namespace Mario
 {
-	std::vector<Input::Key> Input::mKeys = {};
+	std::vector<Input::Key> Input::Keys = {};
 
 	int ASCII[(UINT)eKeyCode::End] =
 	{
@@ -13,14 +13,14 @@ namespace Mario
 
 	void Input::Initailize()
 	{
-		CreateKeys();
+		createKeys();
 	}
 
 	void Input::Update()
 	{
-		UpdateKeys();
+		updateKeys();
 	}
-	void Input::CreateKeys()
+	void Input::createKeys()
 	{
 		for (size_t i = 0; i < (UINT)eKeyCode::End; i++)
 		{
@@ -29,37 +29,37 @@ namespace Mario
 			key.state = eKeyState::None;
 			key.keyCode = (eKeyCode)i;
 
-			mKeys.push_back(key);
+			Keys.push_back(key);
 		}
 	}
 
-	void Input::UpdateKeys()
+	void Input::updateKeys()
 	{
-		std::for_each(mKeys.begin(), mKeys.end(),
+		std::for_each(Keys.begin(), Keys.end(),
 			[](Key& key) -> void
 			{
-				UpdateKey(key);
+				updateKey(key);
 			});
 	}
 
-	void Input::UpdateKey(Input::Key& key)
+	void Input::updateKey(Input::Key& key)
 	{
-		if (IsKeyDown(key.keyCode))
+		if (isKeyDown(key.keyCode))
 		{
-			UpdateKeyDown(key);
+			updateKeyDown(key);
 		}
 		else
 		{
-			UpdateKeyUp(key);
+			updateKeyUp(key);
 		}
 	}
 
-	bool Input::IsKeyDown(eKeyCode code)
+	bool Input::isKeyDown(eKeyCode code)
 	{
 		return GetAsyncKeyState(ASCII[(UINT)code]) & 0x8000;
 	}
 
-	void Input::UpdateKeyDown(Input::Key& key)
+	void Input::updateKeyDown(Input::Key& key)
 	{
 		if (key.bPressed == true)
 			key.state = eKeyState::Pressed;
@@ -68,7 +68,7 @@ namespace Mario
 
 		key.bPressed = true;
 	}
-	void Input::UpdateKeyUp(Input::Key& key)
+	void Input::updateKeyUp(Input::Key& key)
 	{
 		if (key.bPressed == true)
 			key.state = eKeyState::Up;
