@@ -5,6 +5,7 @@
 #include "mario_windows.h"
 
 #include "..\\MarioEngine_Source\\MarioApplication.h"
+#include "..\\MarioEngine_Window\\MarioLoadScenes.h"
 
 Mario::Application application;
 
@@ -124,6 +125,9 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
 
    ShowWindow(hWnd, nCmdShow);
    UpdateWindow(hWnd);
+
+   //load Scenes
+   Mario::LoadScenes();
 
    return TRUE;
 }

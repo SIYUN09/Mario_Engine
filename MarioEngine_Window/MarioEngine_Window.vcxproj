@@ -140,6 +140,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="MarioLoadScenes.h" />
+    <ClInclude Include="MarioPlayScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MarioPlayScene.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

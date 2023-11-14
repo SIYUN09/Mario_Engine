@@ -17,15 +17,21 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)GameObjectMonster.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioApplication.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioEntity.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioGameObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioScene.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioSceneManager.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioTime.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)GameObjectMonster.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioApplication.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioEntity.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioGameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioInput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioScene.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioSceneManager.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioTime.cpp" />
   </ItemGroup>
 </Project>
