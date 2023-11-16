@@ -1,4 +1,4 @@
-#include "MarioPlayScene.h"
+#include "MarioTitleScene.h"
 #include "MarioGameObject.h"
 #include "MarioPlayer.h"
 #include "MarioTransform.h"
@@ -6,13 +6,13 @@
 
 namespace Mario
 {
-	PlayScene::PlayScene()
+	TitleScene::TitleScene()
 	{
 	}
-	PlayScene::~PlayScene()
+	TitleScene::~TitleScene()
 	{
 	}
-	void PlayScene::Initialize()
+	void TitleScene::Initialize()
 	{
 		{
 			Player* bg = new Player();
@@ -25,22 +25,22 @@ namespace Mario
 			SpriteRenderer* sr
 				= bg->AddComponent<SpriteRenderer>();
 			sr->SetName(L"SR");
-			sr->ImageLoad(L"");
+			sr->ImageLoad(L"D:\\AR50\\YamYam_Engine\\Resources\\CloudOcean.png");
 
 
 			AddGameObject(bg);
 		}
 	}
 
-	void PlayScene::Update()
+	void TitleScene::Update()
 	{
 		Scene::Update();
 	}
-	void PlayScene::LateUpdate()
+	void TitleScene::LateUpdate()
 	{
 		Scene::LateUpdate();
 	}
-	void PlayScene::Render(HDC hdc)
+	void TitleScene::Render(HDC hdc)
 	{
 		Scene::Render(hdc);
 	}

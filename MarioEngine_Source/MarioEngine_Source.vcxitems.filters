@@ -12,6 +12,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioComponent.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioTransform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioSpriteRenderer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioMath.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
@@ -26,5 +27,6 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioComponent.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioTransform.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioSpriteRenderer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioMath.h" />
   </ItemGroup>
 </Project>

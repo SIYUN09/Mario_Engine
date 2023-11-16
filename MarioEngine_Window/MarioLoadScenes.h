@@ -2,6 +2,7 @@
 #include "..\\MarioEngine_SOURCE\\MarioSceneManager.h"
 
 #include "MarioPlayScene.h"
+#include "MarioTitleScene.h"
 
 namespace Mario
 {
@@ -9,8 +10,9 @@ namespace Mario
 	{
 		SceneManager::CreateScene<PlayScene>(L"PlayScene");
 		//SceneManager::CreateScene<EndScene>(L"EndScene");
-		//SceneManager::CreateScene<TitleScene>(L"TitleScene");
+		SceneManager::CreateScene<TitleScene>(L"TitleScene");
 
 		SceneManager::LoadScene(L"PlayScene");
+		SceneManager::LoadScene(L"TitleScene");
 	}
 }
