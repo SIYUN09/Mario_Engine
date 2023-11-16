@@ -12,7 +12,7 @@ namespace Mario
 		//SceneManager::CreateScene<EndScene>(L"EndScene");
 		SceneManager::CreateScene<TitleScene>(L"TitleScene");
 
-		SceneManager::LoadScene(L"PlayScene");
+		//SceneManager::LoadScene(L"PlayScene");
 		SceneManager::LoadScene(L"TitleScene");
 	}
 }

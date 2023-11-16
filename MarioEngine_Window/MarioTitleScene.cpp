@@ -25,7 +25,7 @@ namespace Mario
 			SpriteRenderer* sr
 				= bg->AddComponent<SpriteRenderer>();
 			sr->SetName(L"SR");
-			sr->ImageLoad(L"D:\\AR50\\YamYam_Engine\\Resources\\CloudOcean.png");
+			sr->ImageLoad(L"D:\\AR50\\MarioEngine\\Resource\\Title1.png");
 
 
 			AddGameObject(bg);
