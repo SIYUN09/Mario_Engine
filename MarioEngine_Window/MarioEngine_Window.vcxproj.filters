@@ -3,8 +3,10 @@
   <ItemGroup>
     <ClInclude Include="MarioPlayScene.h" />
     <ClInclude Include="MarioLoadScenes.h" />
+    <ClInclude Include="MarioPlayer.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MarioPlayScene.cpp" />
+    <ClCompile Include="MarioPlayer.cpp" />
   </ItemGroup>
 </Project>
