@@ -19,7 +19,7 @@ namespace Mario
 		GameObject* GetOwner() { return mOwner; }
 	private:
 		GameObject* mOwner;
-		
+		// 전방선언
 	};
 }
 

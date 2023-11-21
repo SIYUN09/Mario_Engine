@@ -19,9 +19,12 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioComponent.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioEntity.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioEnums.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioGameObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioInput.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioLayer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioObject.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioScene.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioSceneManager.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioSpriteRenderer.h" />
@@ -35,6 +38,7 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioEntity.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioGameObject.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioInput.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioLayer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioMath.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioScene.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioSceneManager.cpp" />

@@ -19,12 +19,12 @@ namespace Mario
 		T* AddComponent()
 		{
 			T* comp = new T();
+			comp->Initialize();
 			comp->SetOwner(this);
 			mComponents.push_back(comp);
 
 			return comp;
 		}
-
 		template <typename T>
 		T* GetComponent()
 		{
@@ -38,6 +38,9 @@ namespace Mario
 
 			return component;
 		}
+
+	private:
+		void initializeTransform();
 
 	private:
 		std::vector<Component*> mComponents;

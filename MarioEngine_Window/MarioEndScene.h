@@ -3,22 +3,17 @@
 
 namespace Mario
 {
-	class PlayScene : public Scene
+	class EndScene : public Scene
 	{
 	public:
-		PlayScene();
-		~PlayScene();
+		EndScene();
+		~EndScene();
 
 		void Initialize() override;
 		void Update() override;
 		void LateUpdate() override;
 		void Render(HDC hdc) override;
 
-		void OnEnter() override;
-		void OnExit()  override;
-
 	private:
-		class Player* bg;
 	};
 }
-

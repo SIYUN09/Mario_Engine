@@ -1,11 +1,13 @@
 #include "MarioGameObject.h"
 #include "MarioInput.h"
 #include "MarioTime.h"
+#include "MarioTransform.h"
 
 namespace Mario
 {
 	GameObject::GameObject()
 	{
+		initializeTransform();
 	}
 
 	GameObject::~GameObject()
@@ -48,7 +50,10 @@ namespace Mario
 		{
 			comp->Render(hdc);
 		}
+	}
 
-
+	void GameObject::initializeTransform()
+	{
+		AddComponent<Transform>();
 	}
 }

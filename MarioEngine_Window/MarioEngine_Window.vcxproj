@@ -144,12 +144,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="MarioEndScene.h" />
     <ClInclude Include="MarioLoadScenes.h" />
     <ClInclude Include="MarioPlayer.h" />
     <ClInclude Include="MarioPlayScene.h" />
     <ClInclude Include="MarioTitleScene.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="MarioEndScene.cpp" />
     <ClCompile Include="MarioPlayer.cpp" />
     <ClCompile Include="MarioPlayScene.cpp" />
     <ClCompile Include="MarioTitleScene.cpp" />
