@@ -21,7 +21,7 @@ namespace Mario
 		bg = object::Instantiate<Player>
 			(enums::eLayerType::BackGround, Vector2(100.0f, 100.0f));
 		SpriteRenderer* sr = bg->AddComponent<SpriteRenderer>();
-		sr->ImageLoad(L"E:\\AR50\\YamYam_Engine\\Resources\\CloudOcean.png");
+		sr->ImageLoad(L"D:\\AR50\\MarioEngine\\Resource\\World 1-1.png");
 
 		// 게임 오브젝트 생성후에 레이어와 게임오브젝트들의 init함수를 호출
 		Scene::Initialize();
