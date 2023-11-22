@@ -15,5 +15,6 @@ namespace Mario
 		void Render(HDC hdc) override;
 
 	private:
+		class Player* bg;
 	};
 }

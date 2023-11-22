@@ -15,7 +15,7 @@ namespace Mario
 	void TitleScene::Initialize()
 	{
 		{
-			Player* bg = new Player();
+			/*Player* bg = new Player();
 			Transform* tr
 				= bg->AddComponent<Transform>();
 			tr->SetPos(Vector2(0, 0));
@@ -28,7 +28,7 @@ namespace Mario
 			sr->ImageLoad(L"D:\\AR50\\MarioEngine\\Resource\\Title1.png");
 
 
-			AddGameObject(bg);
+			AddGameObject(bg);*/
 		}
 	}
 

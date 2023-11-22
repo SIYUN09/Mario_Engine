@@ -19,9 +19,17 @@ namespace Mario
 	void PlayScene::Initialize()
 	{
 		bg = object::Instantiate<Player>
-			(enums::eLayerType::BackGround, Vector2(100.0f, 100.0f));
+			(enums::eLayerType::BackGround, Vector2(0.0f, 0.0f));
 		SpriteRenderer* sr = bg->AddComponent<SpriteRenderer>();
-		sr->ImageLoad(L"D:\\AR50\\MarioEngine\\Resource\\World 1-1.png");
+		sr->ImageLoad(L"D:\\AR50\\MarioEngine\\Resource\\WORLD.png");
+		bg = object::Instantiate<Player>
+			(enums::eLayerType::Enemy, Vector2(100.0f, 178.0f));
+		SpriteRenderer* cr = bg->AddComponent<SpriteRenderer>();
+		cr->ImageLoad(L"D:\\AR50\\MarioEngine\\Resource\\MARIO.png");
+		bg = object::Instantiate<Player>
+			(enums::eLayerType::Character, Vector2(350.0f, 180.0f));
+		SpriteRenderer* br = bg->AddComponent<SpriteRenderer>();
+		br->ImageLoad(L"D:\\AR50\\MarioEngine\\Resource\\MASH.png");
 
 		// 게임 오브젝트 생성후에 레이어와 게임오브젝트들의 init함수를 호출
 		Scene::Initialize();

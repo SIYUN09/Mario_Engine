@@ -15,10 +15,10 @@ namespace Mario
 	void EndScene::Initialize()
 	{
 		{
-			Player* bg = new Player();
+		/*	Player* bg = new Player();
 			Transform* tr
 				= bg->AddComponent<Transform>();
-			tr->SetPos(Vector2(0, 0));
+			tr->SetPosition(Vector2(0, 0));
 
 			tr->SetName(L"TR");
 
@@ -28,7 +28,7 @@ namespace Mario
 			sr->ImageLoad(L"D:\\AR50\\MarioEngine\\Resource\\End.png");
 
 
-			AddGameObject(bg);
+			*/
 		}
 	}
 

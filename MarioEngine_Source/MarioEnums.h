@@ -6,8 +6,8 @@ namespace Mario::enums
 	{
 		None,
 		BackGround,
-		//Tree 
-		//character
+		Enemy,
+		Character,
 		Player,
 		Max = 16,
 	};
