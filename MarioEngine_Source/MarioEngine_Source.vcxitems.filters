@@ -1,36 +1,103 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="$(MSBuildThisFileDirectory)GameObjectMonster.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioApplication.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioEntity.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioGameObject.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioInput.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioScene.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioSceneManager.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioTime.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioComponent.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioTransform.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioSpriteRenderer.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioMath.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioLayer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioGameObject.cpp">
+      <Filter>MGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)GameObjectMonster.cpp">
+      <Filter>MGameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioScene.cpp">
+      <Filter>MScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioSceneManager.cpp">
+      <Filter>MScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioEntity.cpp">
+      <Filter>MCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioMath.cpp">
+      <Filter>MCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioComponent.cpp">
+      <Filter>MComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioTransform.cpp">
+      <Filter>MComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioSpriteRenderer.cpp">
+      <Filter>MComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioTime.cpp">
+      <Filter>MHelper</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioInput.cpp">
+      <Filter>MHelper</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)GameObjectMonster.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioApplication.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioEntity.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioGameObject.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioInput.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioScene.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioSceneManager.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioTime.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioComponent.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioTransform.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioSpriteRenderer.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioMath.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioEnums.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioLayer.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioObject.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioGameObject.h">
+      <Filter>MGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)GameObjectMonster.h">
+      <Filter>MGameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioSceneManager.h">
+      <Filter>MScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioScene.h">
+      <Filter>MScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h">
+      <Filter>MCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioEntity.h">
+      <Filter>MCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioEnums.h">
+      <Filter>MCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioMath.h">
+      <Filter>MCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioObject.h">
+      <Filter>MCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioComponent.h">
+      <Filter>MComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioTransform.h">
+      <Filter>MComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioTime.h">
+      <Filter>MHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioInput.h">
+      <Filter>MHelper</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioSpriteRenderer.h">
+      <Filter>MComponents</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MGameObject">
+      <UniqueIdentifier>{2a696935-3088-4944-b779-9c05fa3071a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MScenes">
+      <UniqueIdentifier>{c00d03fe-2600-4e75-a31f-dd6c75751c26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MHelper">
+      <UniqueIdentifier>{803281b2-7266-412a-b239-b321ea7dab85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MComponents">
+      <UniqueIdentifier>{535e53ba-cf59-4bb4-8deb-dbf654c80342}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MCommon">
+      <UniqueIdentifier>{d9576fc8-2b32-4212-92d4-a471b4c84814}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
