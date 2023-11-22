@@ -3,14 +3,23 @@
   <ItemGroup>
     <ClInclude Include="MarioPlayScene.h" />
     <ClInclude Include="MarioLoadScenes.h" />
-    <ClInclude Include="MarioPlayer.h" />
     <ClInclude Include="MarioTitleScene.h" />
     <ClInclude Include="MarioEndScene.h" />
+    <ClInclude Include="MarioPlayer.h">
+      <Filter>MContents</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MarioPlayScene.cpp" />
-    <ClCompile Include="MarioPlayer.cpp" />
     <ClCompile Include="MarioTitleScene.cpp" />
     <ClCompile Include="MarioEndScene.cpp" />
+    <ClCompile Include="MarioPlayer.cpp">
+      <Filter>MContents</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="MContents">
+      <UniqueIdentifier>{6787ceb5-f83f-4984-97dd-a44aed52a21d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
