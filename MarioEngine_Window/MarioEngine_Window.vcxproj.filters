@@ -1,25 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="MarioPlayScene.h" />
-    <ClInclude Include="MarioLoadScenes.h" />
-    <ClInclude Include="MarioTitleScene.h" />
-    <ClInclude Include="MarioEndScene.h" />
     <ClInclude Include="MarioPlayer.h">
       <Filter>MContents</Filter>
     </ClInclude>
+    <ClInclude Include="MarioEndScene.h">
+      <Filter>MScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioLoadScenes.h">
+      <Filter>MScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioPlayScene.h">
+      <Filter>MScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioTitleScene.h">
+      <Filter>MScenes</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioLoadResources.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MarioPlayScene.cpp" />
-    <ClCompile Include="MarioTitleScene.cpp" />
-    <ClCompile Include="MarioEndScene.cpp" />
     <ClCompile Include="MarioPlayer.cpp">
       <Filter>MContents</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioEndScene.cpp">
+      <Filter>MScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioPlayScene.cpp">
+      <Filter>MScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioTitleScene.cpp">
+      <Filter>MScenes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="MContents">
       <UniqueIdentifier>{6787ceb5-f83f-4984-97dd-a44aed52a21d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MScenes">
+      <UniqueIdentifier>{ce7d909a-03ac-48d1-b437-0c42e365c590}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

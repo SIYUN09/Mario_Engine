@@ -5,6 +5,7 @@
 #include "mario_windows.h"
 
 #include "..\\MarioEngine_Source\\MarioApplication.h"
+#include "..\\MarioEngine_Window\\MarioLoadResources.h"
 #include "..\\MarioEngine_Window\\MarioLoadScenes.h"
 
 Mario::Application application;
@@ -133,6 +134,7 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    Gdiplus::GdiplusStartup(&gpToken, &gpsi, NULL);
 
    //load Scenes
+   Mario::LoadResources();
    Mario::LoadScenes();
 
    return TRUE;

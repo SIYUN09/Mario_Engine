@@ -2,7 +2,6 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioApplication.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)MarioLayer.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioGameObject.cpp">
       <Filter>MGameObject</Filter>
     </ClCompile>
@@ -36,10 +35,19 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioInput.cpp">
       <Filter>MHelper</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioTexture.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioResource.cpp">
+      <Filter>MResources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioResources.cpp">
+      <Filter>MResources</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioLayer.cpp">
+      <Filter>MLayer</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioApplication.h" />
-    <ClInclude Include="$(MSBuildThisFileDirectory)MarioLayer.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioGameObject.h">
       <Filter>MGameObject</Filter>
     </ClInclude>
@@ -82,6 +90,16 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioSpriteRenderer.h">
       <Filter>MComponents</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioTexture.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioResources.h">
+      <Filter>MResources</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioResource.h">
+      <Filter>MResources</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioLayer.h">
+      <Filter>MLayer</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="MGameObject">
@@ -98,6 +116,12 @@
     </Filter>
     <Filter Include="MCommon">
       <UniqueIdentifier>{d9576fc8-2b32-4212-92d4-a471b4c84814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MLayer">
+      <UniqueIdentifier>{b51d41c1-47ec-4737-9ec3-be53488b43bc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MResources">
+      <UniqueIdentifier>{d460c72f-1484-452f-9410-984d915368f2}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
