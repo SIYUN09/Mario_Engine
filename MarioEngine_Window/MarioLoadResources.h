@@ -6,6 +6,6 @@ namespace Mario
 {
 	void LoadResources()
 	{
-		Resources::Load<graphcis::Texture>(L"BG", L"..\\Resource\\end.png");
+		Resources::Load<graphcis::Texture>(L"BG", L"..\\Resource\\title1.png");
 	}
 }
