@@ -18,7 +18,7 @@ namespace Mario
 		void OnExit()  override;
 
 	private:
-		class Player* mPlayer;
+		class GameObject* bg;
 	};
 }
 

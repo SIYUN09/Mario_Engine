@@ -145,6 +145,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="MarioEndScene.h" />
+    <ClInclude Include="MarioLoadingScene.h" />
     <ClInclude Include="MarioLoadResources.h" />
     <ClInclude Include="MarioLoadScenes.h" />
     <ClInclude Include="MarioPlayer.h" />
@@ -154,6 +155,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MarioEndScene.cpp" />
+    <ClCompile Include="MarioLoadingScene.cpp" />
     <ClCompile Include="MarioPlayer.cpp" />
     <ClCompile Include="MarioPlayerScript.cpp" />
     <ClCompile Include="MarioPlayScene.cpp" />

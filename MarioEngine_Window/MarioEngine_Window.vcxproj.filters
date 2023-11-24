@@ -20,6 +20,9 @@
     <ClInclude Include="MarioPlayerScript.h">
       <Filter>MScript</Filter>
     </ClInclude>
+    <ClInclude Include="MarioLoadingScene.h">
+      <Filter>MScenes</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MarioPlayer.cpp">
@@ -36,6 +39,9 @@
     </ClCompile>
     <ClCompile Include="MarioPlayerScript.cpp">
       <Filter>MScript</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioLoadingScene.cpp">
+      <Filter>MScenes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

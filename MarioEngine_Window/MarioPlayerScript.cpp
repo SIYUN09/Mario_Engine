@@ -1,5 +1,4 @@
 #include "MarioPlayerScript.h"
-#include "MarioPlayerScript.h"
 #include "MarioInput.h"
 #include "MarioTransform.h"
 #include "MarioTime.h"

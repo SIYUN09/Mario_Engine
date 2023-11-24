@@ -2,23 +2,6 @@
 
 namespace Mario::enums
 {
-	enum class eLayerType
-	{
-		None,
-		BackGround,
-		Enemy,
-		Character,
-		Player,
-		Max = 16,
-	};
-	enum class eResourceType
-	{
-		Texture,
-		AudioClip,
-		Prefab,
-		End,
-	};
-
 	enum class eComponentType
 	{
 		Transform,
@@ -28,4 +11,25 @@ namespace Mario::enums
 		End,
 	};
 
+	enum class eLayerType
+	{
+		None,
+		BackGround,
+		//Tree 
+		//character
+		Ending,
+		Title,
+		Loading,
+		Enemy,
+		Player,
+		Max = 16,
+	};
+
+	enum class eResourceType
+	{
+		Texture,
+		AudioClip,
+		Prefab,
+		End,
+	};
 }

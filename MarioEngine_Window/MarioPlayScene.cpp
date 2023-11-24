@@ -13,6 +13,7 @@
 #include "MarioCamera.h"
 #include "MarioRenderer.h"
 
+
 namespace Mario
 {
 	PlayScene::PlayScene()
@@ -24,28 +25,21 @@ namespace Mario
 	void PlayScene::Initialize()
 	{
 		// main camera
-		GameObject* camera = object::Instantiate<GameObject>(enums::eLayerType::None, Vector2(344.0f, 442.0f));
+		GameObject* camera = object::Instantiate<GameObject>(enums::eLayerType::None, Vector2(393.0f, 388.0f));
 		Camera* cameraComp = camera->AddComponent<Camera>();
 		renderer::mainCamera = cameraComp;
 		//camera->AddComponent<PlayerScript>();
-		
 
-		//게임오브젝트 만들기전에 리소스들 전부 Load해두면 좋다.
-		//bg = object::Instantiate<Player>
-		//	(enums::eLayerType::BackGround/*, Vector2(100.0f, 100.0f)*/);
-		//SpriteRenderer* sr = bg->AddComponent<SpriteRenderer>();
 
-		//graphcis::Texture* bg = Resources::Find<graphcis::Texture>(L"BG");
-		//sr->SetTexture(bg);
 
 		mPlayer = object::Instantiate<Player>
-			(enums::eLayerType::Player/*, Vector2(100.0f, 100.0f)*/);
+			(enums::eLayerType::Player, Vector2(0, 580.0f));
 		SpriteRenderer* sr = mPlayer->AddComponent<SpriteRenderer>();
-		sr->SetSize(Vector2(3.0f, 3.0f));
+		sr->SetSize(Vector2(1.5f, 1.5f));
 		mPlayer->AddComponent<PlayerScript>();
 
-		graphcis::Texture* packmanTexture = Resources::Find<graphcis::Texture>(L"PackMan");
-		sr->SetTexture(packmanTexture);
+		graphcis::Texture* Pt = Resources::Find<graphcis::Texture>(L"PM");
+		sr->SetTexture(Pt);
 
 		GameObject* bg = object::Instantiate<GameObject>
 			(enums::eLayerType::BackGround/*, Vector2(100.0f, 100.0f)*/);
@@ -54,6 +48,14 @@ namespace Mario
 
 		graphcis::Texture* bgTexture = Resources::Find<graphcis::Texture>(L"Map");
 		bgSr->SetTexture(bgTexture);
+
+		GameObject* En = object::Instantiate<GameObject>
+			(enums::eLayerType::Enemy, Vector2(700.0f, 580.0f));
+		SpriteRenderer* EnSr = En->AddComponent<SpriteRenderer>();
+		EnSr->SetSize(Vector2(1.5f, 1.5f));
+
+		graphcis::Texture* EnTexture = Resources::Find<graphcis::Texture>(L"En");
+		EnSr->SetTexture(EnTexture);
 
 		// 게임 오브젝트 생성후에 레이어와 게임오브젝트들의 init함수를 호출
 		Scene::Initialize();
@@ -66,17 +68,16 @@ namespace Mario
 	void PlayScene::LateUpdate()
 	{
 		Scene::LateUpdate();
-
 		if (Input::GetKeyDown(eKeyCode::N))
 		{
-			SceneManager::LoadScene(L"TitleScene");
+			SceneManager::LoadScene(L"EndScene");
 		}
 	}
 	void PlayScene::Render(HDC hdc)
 	{
 		Scene::Render(hdc);
-		/*wchar_t str[50] = L"Play Scene";
-		TextOut(hdc, 0, 0, str, 10);*/
+		//wchar_t str[50] = L"Play Scene";
+		//TextOut(hdc, 0, 0, str, 10);
 	}
 	void PlayScene::OnEnter()
 	{

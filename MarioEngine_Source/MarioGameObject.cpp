@@ -6,7 +6,7 @@
 namespace Mario
 {
 	GameObject::GameObject()
-	{
+	{	
 		mComponents.resize((UINT)enums::eComponentType::End);
 		initializeTransform();
 	}

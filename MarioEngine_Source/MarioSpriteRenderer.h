@@ -18,7 +18,7 @@ namespace Mario
 
 		void SetTexture(graphcis::Texture* texture) { mTexture = texture; }
 		void SetSize(math::Vector2 size) { mSize = size; }
-
+		
 	private:
 		graphcis::Texture* mTexture;
 		math::Vector2 mSize;

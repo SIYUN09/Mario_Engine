@@ -3,11 +3,11 @@
 
 namespace Mario
 {
-	class EndScene : public Scene
+	class LoadingScene : public Scene
 	{
 	public:
-		EndScene();
-		~EndScene();
+		LoadingScene();
+		~LoadingScene();
 
 		void Initialize() override;
 		void Update() override;
@@ -21,3 +21,4 @@ namespace Mario
 		class GameObject* bg;
 	};
 }
+

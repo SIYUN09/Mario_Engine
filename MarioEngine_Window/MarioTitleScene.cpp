@@ -38,22 +38,14 @@ namespace Mario
 		//graphcis::Texture* bg = Resources::Find<graphcis::Texture>(L"BG");
 		//sr->SetTexture(bg);
 
-		mPlayer = object::Instantiate<Player>
-			(enums::eLayerType::Player/*, Vector2(100.0f, 100.0f)*/);
-		SpriteRenderer* sr = mPlayer->AddComponent<SpriteRenderer>();
-		sr->SetSize(Vector2(3.0f, 3.0f));
-		mPlayer->AddComponent<PlayerScript>();
+		bg = object::Instantiate<GameObject>
+			(enums::eLayerType::Title/*, Vector2(100.0f, 100.0f)*/);
+		SpriteRenderer* sr = bg->AddComponent<SpriteRenderer>();
+		sr->SetSize(Vector2(3.01f, 3.0f));
+		
 
-		graphcis::Texture* packmanTexture = Resources::Find<graphcis::Texture>(L"PackMan");
-		sr->SetTexture(packmanTexture);
-
-		GameObject* bg = object::Instantiate<GameObject>
-			(enums::eLayerType::BackGround/*, Vector2(100.0f, 100.0f)*/);
-		SpriteRenderer* bgSr = bg->AddComponent<SpriteRenderer>();
-		bgSr->SetSize(Vector2(3.0f, 3.0f));
-
-		graphcis::Texture* bgTexture = Resources::Find<graphcis::Texture>(L"Map");
-		bgSr->SetTexture(bgTexture);
+		graphcis::Texture* Tt1 = Resources::Find<graphcis::Texture>(L"TT1");
+		sr->SetTexture(Tt1);
 
 		// 게임 오브젝트 생성후에 레이어와 게임오브젝트들의 init함수를 호출
 		Scene::Initialize();
@@ -66,17 +58,16 @@ namespace Mario
 	void TitleScene::LateUpdate()
 	{
 		Scene::LateUpdate();
-
+		
 		if (Input::GetKeyDown(eKeyCode::N))
 		{
-			SceneManager::LoadScene(L"TitleScene");
+			SceneManager::LoadScene(L"LoadingScene");
 		}
+		
 	}
 	void TitleScene::Render(HDC hdc)
 	{
 		Scene::Render(hdc);
-		/*wchar_t str[50] = L"Play Scene";
-		TextOut(hdc, 0, 0, str, 10);*/
 	}
 	void TitleScene::OnEnter()
 	{

@@ -55,5 +55,4 @@ namespace Mario
 					, mTexture->GetWidth() * mSize.x, mTexture->GetHeight() * mSize.y));
 		}
 	}
-
 }

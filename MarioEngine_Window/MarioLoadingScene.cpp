@@ -1,4 +1,4 @@
-#include "MarioEndScene.h"
+#include "MarioLoadingScene.h"
 #include "MarioGameObject.h"
 #include "MarioPlayer.h"
 #include "MarioTransform.h"
@@ -15,16 +15,16 @@
 
 namespace Mario
 {
-	EndScene::EndScene()
+	LoadingScene::LoadingScene()
 	{
 	}
-	EndScene::~EndScene()
+	LoadingScene::~LoadingScene()
 	{
 	}
-	void EndScene::Initialize()
+	void LoadingScene::Initialize()
 	{
 		// main camera
-		GameObject* camera = object::Instantiate<GameObject>(enums::eLayerType::None, Vector2(393.0f, 388.0f));
+		GameObject* camera = object::Instantiate<GameObject>(enums::eLayerType::None);
 		Camera* cameraComp = camera->AddComponent<Camera>();
 		renderer::mainCamera = cameraComp;
 		//camera->AddComponent<PlayerScript>();
@@ -39,35 +39,34 @@ namespace Mario
 		//sr->SetTexture(bg);
 
 		bg = object::Instantiate<GameObject>
-			(enums::eLayerType::Ending/*, Vector2(-500.0f, -500.0f)*/);
+			(enums::eLayerType::Loading/*, Vector2(100.0f, 100.0f)*/);
 		SpriteRenderer* sr = bg->AddComponent<SpriteRenderer>();
-		sr->SetSize(Vector2(3.01f, 3.1f));
-		
+		sr->SetSize(Vector2(3.01f, 3.0f));
 
-		graphcis::Texture* ed = Resources::Find<graphcis::Texture>(L"ED");
-		sr->SetTexture(ed);
-		
+
+		graphcis::Texture* Tt2 = Resources::Find<graphcis::Texture>(L"TT2");
+		sr->SetTexture(Tt2);
 
 		// 게임 오브젝트 생성후에 레이어와 게임오브젝트들의 init함수를 호출
 		Scene::Initialize();
 	}
 
-	void EndScene::Update()
+	void LoadingScene::Update()
 	{
 		Scene::Update();
 	}
-	void EndScene::LateUpdate()
+	void LoadingScene::LateUpdate()
 	{
 		Scene::LateUpdate();
 	}
-	void EndScene::Render(HDC hdc)
+	void LoadingScene::Render(HDC hdc)
 	{
 		Scene::Render(hdc);
 	}
-	void EndScene::OnEnter()
+	void LoadingScene::OnEnter()
 	{
 	}
-	void EndScene::OnExit()
+	void LoadingScene::OnExit()
 	{
 		//Transform* tr = bg->GetComponent<Transform>();
 		//tr->SetPosition(Vector2(0, 0));
