@@ -148,12 +148,14 @@
     <ClInclude Include="MarioLoadResources.h" />
     <ClInclude Include="MarioLoadScenes.h" />
     <ClInclude Include="MarioPlayer.h" />
+    <ClInclude Include="MarioPlayerScript.h" />
     <ClInclude Include="MarioPlayScene.h" />
     <ClInclude Include="MarioTitleScene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MarioEndScene.cpp" />
     <ClCompile Include="MarioPlayer.cpp" />
+    <ClCompile Include="MarioPlayerScript.cpp" />
     <ClCompile Include="MarioPlayScene.cpp" />
     <ClCompile Include="MarioTitleScene.cpp" />
   </ItemGroup>

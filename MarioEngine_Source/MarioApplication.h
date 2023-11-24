@@ -1,5 +1,4 @@
 #pragma once
-#include "CommonInclude.h"
 #include "MarioGameObject.h"
 #include "GameObjectMonster.h"
 
@@ -19,6 +18,8 @@ namespace Mario
 		void Render();
 
 		HDC GetHdc() { return mHdc; }
+		UINT GetWidth() { return mWidth; }
+		UINT GetHeight() { return mHeight; }
 
 	private:
 		void clearRenderTarget();

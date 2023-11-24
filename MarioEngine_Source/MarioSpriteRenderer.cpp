@@ -2,11 +2,12 @@
 #include "MarioGameObject.h"
 #include "MarioTransform.h"
 #include "MarioTexture.h"
+#include "MarioRenderer.h"
 
 namespace Mario
 {
 	SpriteRenderer::SpriteRenderer()
-		: Component()
+		: Component(enums::eComponentType::SpriteRenderer)
 		, mTexture(nullptr)
 		, mSize(Vector2::One)
 	{
@@ -35,7 +36,7 @@ namespace Mario
 
 		Transform* tr = GetOwner()->GetComponent<Transform>();
 		Vector2 pos = tr->GetPosition();
-
+		pos = renderer::mainCamera->CaluatePosition(pos);
 		if (mTexture->GetTextureType()
 			== graphcis::Texture::eTextureType::Bmp)
 		{

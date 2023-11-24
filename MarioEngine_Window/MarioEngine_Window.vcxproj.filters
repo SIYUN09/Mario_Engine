@@ -17,6 +17,9 @@
       <Filter>MScenes</Filter>
     </ClInclude>
     <ClInclude Include="MarioLoadResources.h" />
+    <ClInclude Include="MarioPlayerScript.h">
+      <Filter>MScript</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MarioPlayer.cpp">
@@ -31,6 +34,9 @@
     <ClCompile Include="MarioTitleScene.cpp">
       <Filter>MScenes</Filter>
     </ClCompile>
+    <ClCompile Include="MarioPlayerScript.cpp">
+      <Filter>MScript</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="MContents">
@@ -38,6 +44,9 @@
     </Filter>
     <Filter Include="MScenes">
       <UniqueIdentifier>{ce7d909a-03ac-48d1-b437-0c42e365c590}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MScript">
+      <UniqueIdentifier>{1c6ba5d1-66a0-4105-80f6-65b2b2c72715}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

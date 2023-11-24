@@ -45,6 +45,15 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioLayer.cpp">
       <Filter>MLayer</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioCamera.cpp">
+      <Filter>MComponents</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioRenderer.cpp">
+      <Filter>MRenderer</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioScript.cpp">
+      <Filter>MComponents</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioApplication.h" />
@@ -100,6 +109,15 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioLayer.h">
       <Filter>MLayer</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioCamera.h">
+      <Filter>MComponents</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioRenderer.h">
+      <Filter>MRenderer</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioScript.h">
+      <Filter>MComponents</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="MGameObject">
@@ -122,6 +140,9 @@
     </Filter>
     <Filter Include="MResources">
       <UniqueIdentifier>{d460c72f-1484-452f-9410-984d915368f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MRenderer">
+      <UniqueIdentifier>{e621d145-9789-4683-8551-ea5d99ceaace}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

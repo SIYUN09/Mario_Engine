@@ -6,6 +6,7 @@ namespace Mario
 {
 	void LoadResources()
 	{
-		Resources::Load<graphcis::Texture>(L"BG", L"..\\Resource\\title1.png");
+		Resources::Load<graphcis::Texture>(L"PackMan", L"..\\Resource\\MARIO.png");
+		Resources::Load<graphcis::Texture>(L"Map", L"..\\Resource\\WORLD.png");
 	}
 }

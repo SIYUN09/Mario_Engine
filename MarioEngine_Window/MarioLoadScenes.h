@@ -9,7 +9,7 @@ namespace Mario
 {
 	void LoadScenes()
 	{
-		SceneManager::CreateScene<PlayScene>(L"PlayScene");
+		SceneManager::CreateScene<EndScene>(L"PlayScene");
 		//SceneManager::CreateScene<EndScene>(L"EndScene");
 		//SceneManager::CreateScene<TitleScene>(L"TitleScene");
 
