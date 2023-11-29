@@ -54,6 +54,8 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioScript.cpp">
       <Filter>MComponents</Filter>
     </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioAnimation.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioAnimator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioApplication.h" />
@@ -118,6 +120,8 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioScript.h">
       <Filter>MComponents</Filter>
     </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioAnimation.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioAnimator.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="MGameObject">

@@ -12,6 +12,7 @@
 #include "MarioPlayerScript.h"
 #include "MarioCamera.h"
 #include "MarioRenderer.h"
+#include "MarioAnimator.h"
 
 
 namespace Mario
@@ -34,12 +35,21 @@ namespace Mario
 
 		mPlayer = object::Instantiate<Player>
 			(enums::eLayerType::Player, Vector2(0, 580.0f));
-		SpriteRenderer* sr = mPlayer->AddComponent<SpriteRenderer>();
-		sr->SetSize(Vector2(1.5f, 1.5f));
+		/*SpriteRenderer* sr = mPlayer->AddComponent<SpriteRenderer>();
+		sr->SetSize(Vector2(1.5f, 1.5f));*/
 		mPlayer->AddComponent<PlayerScript>();
 
-		graphcis::Texture* Pt = Resources::Find<graphcis::Texture>(L"PM");
-		sr->SetTexture(Pt);
+		//¿òÁ÷ÀÓ
+		/*graphcis::Texture* packmanTexture = Resources::Find<graphcis::Texture>(L"Cat");
+		Animator* animator = mPlayer->AddComponent<Animator>();
+		animator->CreateAnimation(L"CatFrontMove", packmanTexture
+			, Vector2(0.0f, 0.0f), Vector2(32.0f, 32.0f), Vector2::Zero, 4, 0.5f);
+
+		animator->PlayAnimation(L"CatFrontMove", true);*/
+		/*sr->SetTexture(packmanTexture);*/
+
+		/*graphcis::Texture* Pt = Resources::Find<graphcis::Texture>(L"PM");*/
+		/*sr->SetTexture(Pt);*/
 
 		GameObject* bg = object::Instantiate<GameObject>
 			(enums::eLayerType::BackGround/*, Vector2(100.0f, 100.0f)*/);

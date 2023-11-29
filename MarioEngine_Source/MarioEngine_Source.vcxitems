@@ -14,8 +14,10 @@
     <ProjectCapability Include="SourceItemsFromImports" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioAnimation.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)CommonInclude.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)GameObjectMonster.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)MarioAnimator.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioCamera.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioComponent.h" />
@@ -38,7 +40,9 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)MarioTransform.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioAnimation.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)GameObjectMonster.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)MarioAnimator.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioApplication.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioCamera.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)MarioComponent.cpp" />

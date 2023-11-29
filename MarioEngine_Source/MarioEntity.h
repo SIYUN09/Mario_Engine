@@ -1,6 +1,6 @@
 #pragma once
 #include "CommonInclude.h"
-
+using namespace Mario::math;
 
 namespace Mario
 {
