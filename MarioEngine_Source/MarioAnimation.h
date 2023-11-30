@@ -1,4 +1,5 @@
 #pragma once
+#include "MarioComponent.h"
 #include "MarioResource.h"
 #include "MarioTexture.h"
 

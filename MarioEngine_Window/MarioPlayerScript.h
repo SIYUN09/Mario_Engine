@@ -7,6 +7,12 @@ namespace Mario
 	class PlayerScript : public Script
 	{
 	public:
+		enum class eState
+		{
+			Basic,
+			Walk,
+		};
+
 		PlayerScript();
 		~PlayerScript();
 
@@ -15,9 +21,12 @@ namespace Mario
 		void LateUpdate() override;
 		void Render(HDC hdc) override;
 
+	private:
+		void basic();
+		void move();
 
 	private:
-
+		eState mState;
+		class Animator* mAnimator;
 	};
 }
-
