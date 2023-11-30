@@ -150,6 +150,8 @@
     <ClInclude Include="MarioLoadingScene.h" />
     <ClInclude Include="MarioLoadResources.h" />
     <ClInclude Include="MarioLoadScenes.h" />
+    <ClInclude Include="MarioMonster.h" />
+    <ClInclude Include="MarioMonsterScript.h" />
     <ClInclude Include="MarioPlayer.h" />
     <ClInclude Include="MarioPlayerScript.h" />
     <ClInclude Include="MarioPlayScene.h" />
@@ -158,6 +160,8 @@
   <ItemGroup>
     <ClCompile Include="MarioEndScene.cpp" />
     <ClCompile Include="MarioLoadingScene.cpp" />
+    <ClCompile Include="MarioMonster.cpp" />
+    <ClCompile Include="MarioMonsterScript.cpp" />
     <ClCompile Include="MarioPlayer.cpp" />
     <ClCompile Include="MarioPlayerScript.cpp" />
     <ClCompile Include="MarioPlayScene.cpp" />

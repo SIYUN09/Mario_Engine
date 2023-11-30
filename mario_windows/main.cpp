@@ -136,6 +136,8 @@ BOOL InitInstance(HINSTANCE hInstance, int nCmdShow)
    //load Scenes
    Mario::LoadResources();
    Mario::LoadScenes();
+   int a = 0;
+   srand((unsigned int)(&a));
 
    return TRUE;
 }

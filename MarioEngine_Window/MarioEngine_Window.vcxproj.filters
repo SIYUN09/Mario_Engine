@@ -23,6 +23,12 @@
     <ClInclude Include="MarioLoadingScene.h">
       <Filter>MScenes</Filter>
     </ClInclude>
+    <ClInclude Include="MarioMonster.h">
+      <Filter>MContents</Filter>
+    </ClInclude>
+    <ClInclude Include="MarioMonsterScript.h">
+      <Filter>MScript</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="MarioPlayer.cpp">
@@ -42,6 +48,12 @@
     </ClCompile>
     <ClCompile Include="MarioLoadingScene.cpp">
       <Filter>MScenes</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioMonster.cpp">
+      <Filter>MContents</Filter>
+    </ClCompile>
+    <ClCompile Include="MarioMonsterScript.cpp">
+      <Filter>MScript</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
