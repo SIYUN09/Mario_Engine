@@ -35,7 +35,6 @@ namespace Mario
 		case Mario::PlayerScript::eState::Walk:
 			move();
 			break;
-
 		default:
 			break;
 		}
@@ -89,11 +88,10 @@ namespace Mario
 
 		tr->SetPosition(pos);
 
-		if (Input::GetKeyUp(eKeyCode::Right) || Input::GetKeyUp(eKeyCode::Left)
-			|| Input::GetKeyUp(eKeyCode::Up) || Input::GetKeyUp(eKeyCode::Down))
+		if (Input::GetKeyUp(eKeyCode::Right) || Input::GetKeyUp(eKeyCode::Left))
 		{
 			mState = PlayerScript::eState::Basic;
-			mAnimator->PlayAnimation(L"Basic", false);
+			mAnimator->PlayAnimation(L"Stand", false);
 		}
 	}
 }

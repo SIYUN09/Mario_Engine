@@ -2,6 +2,7 @@
 #include "MarioInput.h"
 #include "MarioTime.h"
 #include "MarioSceneManager.h"
+#include "MarioResources.h"
 namespace Mario
 {
 	Application::Application()
@@ -52,6 +53,12 @@ namespace Mario
 		SceneManager::Render(mBackHdc);
 
 		copyRenderTarget(mBackHdc, mHdc);
+	}
+
+	void Application::Release()
+	{
+		SceneManager::Release();
+		Resources::Release();
 	}
 
 	void Application::clearRenderTarget()
